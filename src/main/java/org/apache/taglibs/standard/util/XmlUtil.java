@@ -99,7 +99,6 @@ public class XmlUtil {
                     return (SAXTransformerFactory) tf;
                 }
             }, TransformerConfigurationException.class);
-            TRANSFORMER_FACTORY.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, secureProcessing);
         } catch (TransformerConfigurationException e) {
             throw new ExceptionInInitializerError(e);
         }
